@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "ostream": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "initializer_list": "cpp",
+        "valarray": "cpp"
     }
 }
