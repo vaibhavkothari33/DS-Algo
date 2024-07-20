@@ -70,3 +70,9 @@ int main()
     cout << endl;
     cout << "Last Index of 6 in arr is :" << index4;
 }
+
+// coding ninjas:
+// https://www.naukri.com/code360/problems/first-and-last-position-of-an-element-in-sorted-array_1082549?source=youtube&campaign=love_babbar_codestudio2&utm_source=youtube&utm_medium=affiliate&utm_campaign=love_babbar_codestudio2
+
+// leetcode
+// https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
