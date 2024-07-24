@@ -1,4 +1,9 @@
 # Sorting Algorithms
+<br>
+
+## A stable sorting algorithm maintains the relative order of the items with equal sort keys. An unstable sorting algorithm does not.
+<br>
+<br>
 
 # Selection Sort
 
@@ -17,7 +22,8 @@
   }
 ```
 ##
-
+<br>
+<br>
 
 # Bubble Sort
 
@@ -27,13 +33,11 @@
 
 
 ```cpp
-  for (int i = 0; i < n - 1; i++) {
-    int index1 = i;
-    for (int j = i + 1; j < n; j++) {
-      if (arr[j] < arr[index1]) {
-        index1 = j;
-      }
-    }
-    swap(arr[index1], arr[i]);
-  }
+     for (int i = 0; i < n - 1; i++) {
+         for (int j = i + 1; j < n; j++) {
+            if (arr[i] > arr[j]) {
+                 swap(arr[i], arr[j]);
+                 }
+             }
+         }
 ```
