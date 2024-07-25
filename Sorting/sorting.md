@@ -45,9 +45,9 @@
 <br>
 <br>
 
-# Interection Sort
+# Insertion Sort
 
-### Mostly used when the data in the array /list / vector is smaller as it takes less memory 
+### Think of the card example
 ### Space Comp: O(1)
 ### Time Comp: O(n^2)
 
