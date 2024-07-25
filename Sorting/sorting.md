@@ -47,17 +47,48 @@
 
 # Insertion Sort
 
-### Think of the card example
+### Think of the card example Swap nai shift hoga
+### it make the array sorted from the starting
 ### Space Comp: O(1)
 ### Time Comp: O(n^2)
+### Best Time Comp: O(n)
 
+### For loop
 
 ```cpp
-     for (int i = 0; i < n - 1; i++) {
-         for (int j = i + 1; j < n; j++) {
-            if (arr[i] > arr[j]) {
-                 swap(arr[i], arr[j]);
-                 }
-             }
-         }
+ for(int i=0;i<n;i++){
+        int temp = arr[i];
+        int j=i-1;
+        for(;j>=0;j--){
+            if(arr[j]>temp){
+                // shift
+                arr[j+1]=arr[j];
+            }
+            else{
+                break;
+            }
+        }
+        arr[j+1]=temp;
+    }
+```
+
+### while loop
+
+```cpp
+int i = 1;
+  while (i < n) {
+    int j = i - 1;
+    int temp = arr[i];
+    while (j >= 0) {
+      if (arr[j] > temp) {
+        arr[j + 1] = arr[j];
+
+      } else {
+        break;
+      }
+      j--;
+    }
+    i++;
+    arr[j + 1] = temp;
+  }
 ```
