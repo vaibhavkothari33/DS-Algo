@@ -27,7 +27,6 @@
 
 # Bubble Sort
 
-### Mostly used when the data in the array /list / vector is smaller as it takes less memory 
 ### Space Comp: O(1)
 ### Time Comp: O(n^2)
 ### Best Time Comp: O(n)
