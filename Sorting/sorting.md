@@ -1,39 +1,53 @@
 # Sorting Algorithms
+
 <br>
 
 ## A stable sorting algorithm maintains the relative order of the items with equal sort keys. An unstable sorting algorithm does not.
+
 <br>
 <br>
 
 # Selection Sort
 
-### Mostly used when the data in the array /list / vector is smaller as it takes less memory 
+### Mostly used when the data in the array /list / vector is smaller as it takes less memory
+
 ### Space Comp: O(1)
+
 ### Time Comp: O(n^2)
+
 ```cpp
-  for (int i = 0; i < n - 1; i++) {
-    int index1 = i;
-    for (int j = i + 1; j < n; j++) {
-      if (arr[j] < arr[index1]) {
-        index1 = j;
-      }
+void selectionSort(int arr[], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        int temp = i;
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[j] < arr[temp])
+            {
+                temp = j;
+            }
+        }
+        swap(arr[i], arr[temp]);
     }
-    swap(arr[index1], arr[i]);
-  }
+}
 ```
+
 ##
+
 <br>
 <br>
 
 # Bubble Sort
 
 ### Space Comp: O(1)
+
 ### Time Comp: O(n^2)
+
 ### Best Time Comp: O(n)
 
-
 ```cpp
-   
+
 void bubbleSort(int arr[], int n)
 {
     for (int i = 0; i < n - 1; i++)
@@ -49,15 +63,20 @@ void bubbleSort(int arr[], int n)
 }
 
 ```
+
 <br>
 <br>
 
 # Insertion Sort
 
 ### Think of the card example Swap nai shift hoga
+
 ### it make the array sorted from the starting
+
 ### Space Comp: O(1)
+
 ### Time Comp: O(n^2)
+
 ### Best Time Comp: O(n)
 
 ### For loop
@@ -82,20 +101,18 @@ void bubbleSort(int arr[], int n)
 ### while loop
 
 ```cpp
-int i = 1;
-  while (i < n) {
-    int j = i - 1;
-    int temp = arr[i];
-    while (j >= 0) {
-      if (arr[j] > temp) {
-        arr[j + 1] = arr[j];
+void insertionSort(int arr[], int n)
+{
+    for (int i = 1; i < n; i++)
+    {
+        int temp = arr[i];
+        int j = i - 1;
 
-      } else {
-        break;
-      }
-      j--;
+        while (j >= 0 && arr[j] > temp){
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = temp;
     }
-    i++;
-    arr[j + 1] = temp;
-  }
+}
 ```

@@ -1,21 +1,21 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// void selectionSort(int arr[], int n)
-// {
-//     for (int i = 0; i < n - 1; i++)
-//     {
-//         int temp = i;
-//         for (int j = i + 1; j < n; j++)
-//         {
-//             if (arr[j] < arr[temp])
-//             {
-//                 temp = j;
-//             }
-//         }
-//         swap(arr[i], arr[temp]);
-//     }
-// }
+void selectionSort(int arr[], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        int temp = i;
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[j] < arr[temp])
+            {
+                temp = j;
+            }
+        }
+        swap(arr[i], arr[temp]);
+    }
+}
 
 void bubbleSort(int arr[], int n)
 {
@@ -31,6 +31,20 @@ void bubbleSort(int arr[], int n)
     }
 }
 
+void insertionSort(int arr[], int n)
+{
+    for (int i = 1; i < n; i++)
+    {
+        int temp = arr[i];
+        int j = i - 1;
+
+        while (j >= 0 && arr[j] > temp){
+            arr[j+1] = arr[j];
+            j--;
+        }
+        arr[j+1] = temp;
+    }
+}
 void printArray(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
@@ -49,7 +63,8 @@ int main()
     printArray(arr, n);
 
     // selectionSort(arr, n);
-    bubbleSort(arr, n);
+    // bubbleSort(arr, n);
+    insertionSort(arr,n);
 
     cout << "Sorted Array: ";
     printArray(arr, n);
