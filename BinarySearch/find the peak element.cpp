@@ -1,5 +1,6 @@
 class Solution {
 public:
+// 4 5 7 8 2 3 
     int findPeakElement(vector<int>& nums) {
         int start = 0;
         int last =nums.size()-1;
@@ -18,7 +19,7 @@ public:
 };
 #include<bits/stdc++.h>
 using namespace std;
- 
+
 int main()
 {
     //  leetcode
