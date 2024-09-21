@@ -40,8 +40,8 @@ vector<vector<int>> findTriplets(vector<int> arr, int n, int K)
         }
     }
     return ans;
-    // time complexity n logn + n^2 
-    // space complexity = 
+    // time complexity n logn + n^2
+    // space complexity =
 }
 int main()
 {

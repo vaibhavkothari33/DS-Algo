@@ -22,24 +22,31 @@ vector<vector<int>> pairSum(vector<int> &arr, int s)
     sort(ans.begin(), ans.end());
     return ans;
 }
+
 // print the index of the target sum
 // Leetcode
-class Solution {
+class Solution
+{
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-    //    vector< vector<int>>ans;
+    vector<int> twoSum(vector<int> &nums, int target)
+    {
+        //    vector< vector<int>>ans;
 
-        for(int i=0;i<nums.size();i++){
-            for(int j=i+1;j<nums.size();j++){
-                if(nums[i]+nums[j]==target){
-                    return {i,j};
+        for (int i = 0; i < nums.size(); i++)
+        {
+            for (int j = i + 1; j < nums.size(); j++)
+            {
+                if (nums[i] + nums[j] == target)
+                {
+                    return {i, j};
                 }
             }
         }
-        
-    return {};
+
+        return {};
     }
 };
+
 int main()
 {
 }

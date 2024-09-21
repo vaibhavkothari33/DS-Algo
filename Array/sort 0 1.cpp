@@ -1,12 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
+// Time complexity  - 0(n)
+// space complexity - 0(1)
 void sort01(int arr[], int n)
 {
     int left = 0;
     int right = n - 1;
 
-    while (left < right)
-    {
         while (arr[left] == 0 && left < right)
         {
             left++;
@@ -23,7 +23,7 @@ void sort01(int arr[], int n)
             right--;
         }
     }
-}
+
 int main()
 {
 }
