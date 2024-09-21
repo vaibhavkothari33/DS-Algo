@@ -33,13 +33,21 @@
 
 
 ```cpp
-     for (int i = 0; i < n - 1; i++) {
-         for (int j = i + 1; j < n; j++) {
-            if (arr[i] > arr[j]) {
-                 swap(arr[i], arr[j]);
-                 }
-             }
-         }
+   
+void bubbleSort(int arr[], int n)
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - 1 - i; j++)
+        {
+            if (arr[j] > arr[j + 1])
+            {
+                swap(arr[j], arr[j + 1]);
+            }
+        }
+    }
+}
+
 ```
 <br>
 <br>
