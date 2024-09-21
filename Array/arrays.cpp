@@ -1,3 +1,4 @@
+// find the maximum and minimun in a array
 #include <bits/stdc++.h>
 using namespace std;
 int getMax(int arr[], int n)

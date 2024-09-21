@@ -4,6 +4,9 @@
         "regex": "cpp",
         "initializer_list": "cpp",
         "valarray": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "utility": "cpp"
     }
 }
