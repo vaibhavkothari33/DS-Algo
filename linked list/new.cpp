@@ -13,11 +13,6 @@ Node *create(int value)
     newNode->next = nullptr;
     return newNode;
 }
-// void insert(Node*& head,int value){
-//     Node* newNode = create(value);
-//     newNode->next = head;
-//     head = newNode;
-// }
 void insert(Node *&head, int value)
 {
     Node *newNode = create(value);
