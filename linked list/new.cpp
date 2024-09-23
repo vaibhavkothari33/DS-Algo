@@ -11,7 +11,7 @@ Node *create(int value)
     Node *newNode = new Node();
     newNode->data = value;
     newNode->next = nullptr;
-    return newNode;
+    return newNode; 
 }
 void insert(Node *&head, int value)
 {
