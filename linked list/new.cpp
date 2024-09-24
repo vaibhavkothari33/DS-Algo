@@ -11,7 +11,7 @@ Node *create(int value)
     Node *newNode = new Node();
     newNode->data = value;
     newNode->next = nullptr;
-    return newNode; 
+    return newNode;
 }
 void insert(Node *&head, int value)
 {
@@ -33,6 +33,32 @@ void insertend(Node *&head, int value)
         temp = temp->next;
     }
     temp->next = newNode;
+}
+void deleteAtStart(Node *&head, int key)
+{
+    if (head == nullptr)
+    {
+        return;
+    }
+    if (head->data == key)
+    {
+        Node *temp = head;
+        head = head->next;
+        delete temp;
+        return;
+    }
+    Node *temp = head;
+    while (temp->next != nullptr && temp->next->data != key)
+    {
+        temp = temp->next;
+    }
+    if (temp->next == nullptr)
+    {
+        return;
+    }
+    Node *nodeToDelete = temp->next;
+    temp->next = nodeToDelete->next;
+    delete nodeToDelete;
 }
 void display(Node *head)
 {
@@ -90,29 +116,36 @@ int main()
     insert(head, 100);
     display(head);
     cout << endl;
+    deleteAtStart(head,200);
+    display(head);
+    deleteAtStart(head,100);
+    display(head);
+    deleteAtStart(head,300);
+    display(head);
+   
 }
 
 // List is empty
-// 600  
+// 600
 
-// 600  500  
+// 600  500
 
-// 600  500  400  
+// 600  500  400
 
-// 600  500  400  300  
+// 600  500  400  300
 
-// 600  500  400  300  200  
+// 600  500  400  300  200
 
-// 600  500  400  300  200  100  
+// 600  500  400  300  200  100
 
-// 600  600  500  400  300  200  100  
+// 600  600  500  400  300  200  100
 
-// 500  600  600  500  400  300  200  100  
+// 500  600  600  500  400  300  200  100
 
-// 400  500  600  600  500  400  300  200  100  
+// 400  500  600  600  500  400  300  200  100
 
-// 300  400  500  600  600  500  400  300  200  100  
+// 300  400  500  600  600  500  400  300  200  100
 
-// 200  300  400  500  600  600  500  400  300  200  100  
+// 200  300  400  500  600  600  500  400  300  200  100
 
-// 100  200  300  400  500  600  600  500  400  300  200  100  
+// 100  200  300  400  500  600  600  500  400  300  200  100
