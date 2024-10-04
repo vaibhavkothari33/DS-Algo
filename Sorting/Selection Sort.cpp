@@ -27,6 +27,12 @@ void bubbleSort(int arr[], int n)
             {
                 swap(arr[j], arr[j + 1]);
             }
+            cout << "Round " << i << " of sorting: ";
+            for (int k = 0; k < n; k++)
+            {
+                cout << arr[k] << " ";
+            }
+            cout << endl;
         }
     }
 }
@@ -38,11 +44,18 @@ void insertionSort(int arr[], int n)
         int temp = arr[i];
         int j = i - 1;
 
-        while (j >= 0 && arr[j] > temp){
-            arr[j+1] = arr[j];
+        while (j >= 0 && arr[j] > temp)
+        {
+            arr[j + 1] = arr[j];
             j--;
         }
-        arr[j+1] = temp;
+        arr[j + 1] = temp;
+        cout << "Round " << i << " of sorting: ";
+        for (int k = 0; k < n; k++)
+        {
+            cout << arr[k] << " ";
+        }
+        cout << endl;
     }
 }
 void printArray(int arr[], int n)
@@ -63,8 +76,8 @@ int main()
     printArray(arr, n);
 
     // selectionSort(arr, n);
-    // bubbleSort(arr, n);
-    insertionSort(arr,n);
+    bubbleSort(arr, n);
+    // insertionSort(arr, n);
 
     cout << "Sorted Array: ";
     printArray(arr, n);
