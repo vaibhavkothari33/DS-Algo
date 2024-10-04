@@ -16,7 +16,7 @@ int main()
     cout << "Enter the element that you want to add in the first" << endl;
     cin >> first_ele;
     arr.insert(arr.begin(), first_ele);
-
+ 
     cout << "New array one" << endl;
     for (int i = 0; i < arr.size(); i++)
     {

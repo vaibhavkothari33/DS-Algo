@@ -160,6 +160,15 @@ int main()
     cout << "Before swap" << endl;
     cout << a << " " << b << endl;
     // int temp;
+    int arr[5]={2,3,4,5,6};
+    cout<<arr[0]<<" ";
+    cout<<arr[1]<<" ";
+    cout<<arr[2]<<" ";
+    cout<<arr[3]<<" ";
+    cout<<arr[4]<<" ";
+    cout<<arr[5]<<" ";  // garbagr value
+    cout<<arr[9]<<" ";  // garbagr value
+    cout<<endl;
     // temp = a;
     // a=b;
     // b = temp;
