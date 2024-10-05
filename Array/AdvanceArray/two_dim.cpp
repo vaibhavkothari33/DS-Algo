@@ -14,7 +14,7 @@ vector<vector<int>> multiplyMatrices(vector<vector<int>> &mat1, vector<vector<in
     for (int i = 0; i < r1; i++) {
         for (int j = 0; j < c2; j++) {
             for (int k = 0; k < c1; k++) {
-                result[i][j] += mat1[i][k] * mat2[k][j]; // Multiply and sum
+                result[i][j] += mat1[i][k] *  mat2[k][j]; // Multiply and sum
             }
         }   
     }
