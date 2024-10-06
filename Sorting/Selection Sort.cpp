@@ -78,8 +78,6 @@
 //     return 0;
 // }
 
-
-
 #include <bits/stdc++.h>
 using namespace std;
 void printArray(int arr[], int n)
@@ -114,8 +112,8 @@ void selectionSort(int arr[], int n)
 
 int main()
 {
-    int arr[] = {1,2,3,4,5};
-    // int arr[] = {64, 25, 12, 22, 11};
+    // int arr[] = {1,2,3,4,5};
+    int arr[] = {64, 69, 12, 22, 11};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     cout << "Original Array: ";

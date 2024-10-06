@@ -19,55 +19,55 @@ void insert(Node *&head, int value)
     newNode->next = head;
     head = newNode;
 }
-void insertend(Node *&head, int value)
-{
-    Node *newNode = create(value);
-    if (head == nullptr)
-    {
-        head = newNode;
-        return;
-    }
-    Node *temp = head;
-    while (temp->next != nullptr)
-    {
-        temp = temp->next;
-    }
-    temp->next = newNode;
-}
-void deleteAtStart(Node *&head, int key)
-{
-    if (head == nullptr)
-    {
-        return;
-    }
-    if (head->data == key)
-    {
-        Node *temp = head;
-        head = head->next;
-        delete temp;
-        return;
-    }
-    Node *temp = head;
-    while (temp->next != nullptr && temp->next->data != key)
-    {
-        temp = temp->next;
-    }
-    if (temp->next == nullptr)
-    {
-        return;
-    }
-    Node *nodeToDelete = temp->next;
-    temp->next = nodeToDelete->next;
-    delete nodeToDelete;
-}
+// void insertend(Node *&head, int value)
+// {
+//     Node *newNode = create(value);
+//     if (head == nullptr)
+//     {
+//         head = newNode;
+//         return;
+//     }
+//     Node *temp = head;
+//     while (temp->next != nullptr)
+//     {
+//         temp = temp->next;
+//     }
+//     temp->next = newNode;
+// }
+// void deleteAtStart(Node *&head, int key)
+// {
+//     if (head == nullptr)
+//     {
+//         return;
+//     }
+//     if (head->data == key)
+//     {
+//         Node *temp = head;
+//         head = head->next;
+//         delete temp;
+//         return;
+//     }
+//     Node *temp = head;
+//     while (temp->next != nullptr && temp->next->data != key)
+//     {
+//         temp = temp->next;
+//     }
+//     if (temp->next == nullptr)
+//     {
+//         return;
+//     }
+//     Node *nodeToDelete = temp->next; 
+//     temp->next = nodeToDelete->next;
+//     delete nodeToDelete;
+// }
 void display(Node *head)
 {
+    Node *temp = head;
     if (head == nullptr)
     {
         cout << "List is empty";
         return;
     }
-    Node *temp = head;
     while (temp != nullptr)
     {
         cout << temp->data << "  ";
@@ -80,22 +80,22 @@ int main()
     Node *head = nullptr;
     display(head);
     cout << endl;
-    insertend(head, 600);
-    display(head);
-    cout << endl;
-    insertend(head, 500);
-    display(head);
-    cout << endl;
-    insertend(head, 400);
-    display(head);
-    cout << endl;
-    insertend(head, 300);
-    display(head);
-    cout << endl;
-    insertend(head, 200);
-    display(head);
-    cout << endl;
-    insertend(head, 100);
+    // insertend(head, 600);
+    // display(head);
+    // cout << endl;
+    // insertend(head, 500);
+    // display(head);
+    // cout << endl;
+    // insertend(head, 400);
+    // display(head);
+    // cout << endl;
+    // insertend(head, 300);
+    // display(head);
+    // cout << endl;
+    // insertend(head, 200);
+    // display(head);
+    // cout << endl;
+    // insertend(head, 100);
     display(head);
     cout << endl;
     insert(head, 600);
@@ -116,12 +116,12 @@ int main()
     insert(head, 100);
     display(head);
     cout << endl;
-    deleteAtStart(head,200);
-    display(head);
-    deleteAtStart(head,100);
-    display(head);
-    deleteAtStart(head,300);
-    display(head);
+    // deleteAtStart(head,200);
+    // display(head);
+    // deleteAtStart(head,100);
+    // display(head);
+    // deleteAtStart(head,300);
+    // display(head);
    
 }
 
