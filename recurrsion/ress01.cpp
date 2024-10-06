@@ -57,7 +57,8 @@ int main()
     cout << pow(4, 3) << endl;
     string a = "Vaibhav";
     rev(a);
-     char str[] = "geeg";
+    
+    char str[] = "geeg";
     int n = strlen(str);
     if (isPal(str,0,n-1))
     cout << "Yes";
