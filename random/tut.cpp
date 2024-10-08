@@ -30,7 +30,9 @@ int i[5]={5,6,7,8,9};
 int *ptr; 
 ptr=&i[0]; 
 cout<<"Value of *ptr is : "<<*ptr<<"\n"; 
-cout<<"Value of *ptr++ : "<<*ptr++; 
-cout<<"Value of *ptr++ : "<<*ptr++; 
+cout<<"Value of *ptr++ : "<<*ptr++<<endl; 
+cout<<"Value of *ptr++ : "<<*ptr++<<endl; 
+cout<<"Value of *ptr++ : "<<*ptr++<<endl; 
+cout<<"Value of *ptr++ : "<<*++ptr<<endl; 
 return 0; 
 }

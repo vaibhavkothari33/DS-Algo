@@ -5,9 +5,9 @@
 // {
 //     int arr[] = {1, 2, 4, 5, 6};
 //     int n = sizeof(arr) / sizeof(arr[0]);
-//     cout << sizeof(arr) << endl;
-//     cout << sizeof(arr[0]) << endl;
-//     cout << n << endl;
+//     // cout << sizeof(arr) << endl;
+//     // cout << sizeof(arr[0]) << endl;
+//     // cout << n << endl;
 
 //     for (int i = 0; i < n; i++)
 //     {
@@ -17,8 +17,8 @@
 
 //     int newele = 52;
 
-//     for(int i=n;i<1;i++){
-//         arr[i-1] = arr[i];
+//     for(int i=n;i>=0;i--){
+//         arr[i] = arr[i-1];
 //     }
 
 //     arr[0] = newele;
@@ -80,60 +80,60 @@
 //     cout<<"No element found";
 // }
 
-#include <bits/stdc++.h>
-using namespace std;
+// #include <bits/stdc++.h>
+// using namespace std;
 
-int main()
-{
-    int r1, c1, r2, c2;
-    cin >> r1 >> c1;
-    cin >> r2 >> c2;
+// int main()
+// {
+//     int r1, c1, r2, c2;
+//     cin >> r1 >> c1;
+//     cin >> r2 >> c2;
 
-    if (c1 != r2)
-    {
-        cout << "Matrixes cannot be multiplied" << endl;
-        return 0;
-    }
-    int mat1[r1][c1], mat2[r2][c2], result[r1][c2];
+//     if (c1 != r2)
+//     {
+//         cout << "Matrixes cannot be multiplied" << endl;
+//         return 0;
+//     }
+//     int mat1[r1][c1], mat2[r2][c2], result[r1][c2];
 
-    for (int i = 0; i < r1; i++)
-    {
-        for (int j = 0; j < c1; j++)
-        {
-            cin >> mat1[i][j];
-        }
-    }
+//     for (int i = 0; i < r1; i++)
+//     {
+//         for (int j = 0; j < c1; j++)
+//         {
+//             cin >> mat1[i][j];
+//         }
+//     }
 
-    for (int i = 0; i < r2; i++)
-    {
-        for (int j = 0; j < c2; j++)
-        {
-            cin >> mat1[i][j];
-        }
-    }
-    for (int i = 0; i < r1; i++)
-    {
-        for (int j = 0; j < c2; j++)
-        {
-             result[i][j]=0;
-        }
-    }
+//     for (int i = 0; i < r2; i++)
+//     {
+//         for (int j = 0; j < c2; j++)
+//         {
+//             cin >> mat1[i][j];
+//         }
+//     }
+//     for (int i = 0; i < r1; i++)
+//     {
+//         for (int j = 0; j < c2; j++)
+//         {
+//              result[i][j]=0;
+//         }
+//     }
 
-    for(int i=0;i<r1;i++){
-        for(int j=0;j<c2;j++){
-            for(int k=0;k<c1;k++){
-                result[i][j]+=mat1[i][k] * mat2[k][j];
-            }
-        }
-    }
-       for (int i = 0; i < r1; i++)
-    {
-        for (int j = 0; j < c2; j++)
-        {
-            cout<<result[i][j];
-        }
-    }
-    cout<<endl;
-    return 0;
+//     for(int i=0;i<r1;i++){
+//         for(int j=0;j<c2;j++){
+//             for(int k=0;k<c1;k++){
+//                 result[i][j]+=mat1[i][k] * mat2[k][j];
+//             }
+//         }
+//     }
+//        for (int i = 0; i < r1; i++)
+//     {
+//         for (int j = 0; j < c2; j++)
+//         {
+//             cout<<result[i][j];
+//         }
+//     }
+//     cout<<endl;
+//     return 0;
     
-}
+// }

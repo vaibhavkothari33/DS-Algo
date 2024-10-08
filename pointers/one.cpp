@@ -21,9 +21,12 @@ int main()
     int num = 7;
     int *ptr2 = &num;
     int *q = ptr2;
-    cout<<*ptr2<<endl<<q<<endl;
-    cout<<&ptr2<<endl<<*q<<endl;
-    cout<<&num<<endl;
+
+    cout<<"*ptr2 "<<*ptr2  <<endl;
+    cout<<"*q "<<  *q  <<endl;
+    cout<<"&ptr2 "<<  &ptr2 <<endl;
+    cout<<"*q "<< q <<endl;
+    cout<<"&num "<< &num   <<endl;
     // cout<<**num<<endl;
 
  

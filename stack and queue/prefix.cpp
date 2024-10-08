@@ -4,7 +4,6 @@ using namespace std;
 // Function to evaluate the postfix expression
 int prnajl(string str) {
     stack<int> s;
-    
     for (char c : str) {
         if (isdigit(c)) {
             // Convert the character to its corresponding integer value
