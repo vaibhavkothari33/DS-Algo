@@ -16,8 +16,9 @@ void bubbleSort(int arr[],int n){
     }
 }
 int main() {
-    int arr[] = {64,69,12,22,11};
+    // int arr[] = {64,69,12,22,11};
     // int arr[] = {9,3,5,2,7,8};
+    int arr[] =  {15, 5, 4, 18, 12, 19, 14, 10, 8, 20};
     int n = sizeof(arr)/sizeof(arr[0]);
 
     cout << "Bubble Sort: " << endl;

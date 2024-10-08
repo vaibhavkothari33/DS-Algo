@@ -31,11 +31,12 @@ void print(int arr[], int n)
 }
 int main()
 {
-    int arr[] = {64, 69, 12, 22, 11};
-    // int brr[6] = {78,65,54,45,12,03};
+    int brr[6] = {64, 69, 12, 22, 11};
+       int arr[10] =  {15, 5, 4, 18, 12, 19, 14, 10, 8, 20};
+    // int brr[6] = {7,8,54,45,12,03};
 
-    insertionSort(arr, 5);
-    // insertionSort(brr,6);
+    insertionSort(arr, 10);
+    insertionSort(brr,6);
 
     // print(arr,5);
     cout << endl;
