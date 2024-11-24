@@ -1,5 +1,7 @@
 // find the maximum and minimun in a array
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <iostream>
+
 using namespace std;
 int getMax(int arr[], int n)
 {
@@ -7,10 +9,6 @@ int getMax(int arr[], int n)
 
     for (int i = 0; i < n; i++)
     {
-        // if (arr[i] > max)
-        // {
-        //     max = arr[i];
-        // }
         maxi=max(maxi,arr[i]);
     }
     return maxi;
