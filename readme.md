@@ -244,3 +244,46 @@ int main()
     cout << a << " " << b << endl;
 }
 ```
+
+
+## insert and traversal in trees
+```cpp
+
+// Define a BST node
+struct Node {
+    int data;
+    Node* left;
+    Node* right;
+
+    Node(int value) {
+        data = value;
+        left = right = nullptr;
+    }
+};
+
+// Function to insert a new value into the BST
+Node* insert(Node* root, int value) {
+    // If the tree is empty, create a new node and return it
+    if (root == nullptr) {
+        return new Node(value);
+    }
+
+    // Traverse to the correct position and insert the value
+    if (value < root->data) {
+        root->left = insert(root->left, value);
+    } else if (value > root->data) {
+        root->right = insert(root->right, value);
+    }
+
+    return root;
+}
+
+// Inorder traversal of BST (Left - Root - Right)
+void inorderTraversal(Node* root) {
+    if (root == nullptr) return;
+
+    inorderTraversal(root->left);    // Traverse left subtree
+    cout << root->data << " ";       // Visit root
+    inorderTraversal(root->right);   // Traverse right subtree
+}
+```
