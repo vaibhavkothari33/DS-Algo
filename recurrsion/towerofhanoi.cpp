@@ -64,21 +64,20 @@ void towerofhanoi(int n, char a, char c, char b, int &move)
     {
         cout << "Move disk 1 from " << a << " to " << b << endl;
         move++;
-        return ;
+        return;
     }
-    towerofhanoi(n-1,a,c,b,move);
-    cout<<"Move disk "<<n<<" from "<<a<<" to "<<b<<endl;
+    towerofhanoi(n - 1, a, c, b, move);
+    cout << "Move disk " << n << " from " << a << " to " << b << endl;
     move++;
-    towerofhanoi(n-1,c,b,a,move);
-
+    towerofhanoi(n - 1, c, b, a, move);
 }
 int main()
 {
     int n;
-    int move =0;
-    cout<<"Enter";
-    cin>>n;
-    towerofhanoi(n,'A','B','C',move);
-    cout<<"Total move: "<<move<<endl;
+    int move = 0;
+    cout << "Enter";
+    cin >> n;
+    towerofhanoi(n, 'A', 'B', 'C', move);
+    cout << "Total move: " << move << endl;
     return 0;
 }
